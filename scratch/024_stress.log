@@ -1,0 +1,22 @@
+=== 1. cost breakeven (strategy CAGR vs cost-free buy-and-hold) ===
+   buy-and-hold (cost-free, daily-rebalanced): +17.21%
+   costs x1.0 (0.50% round trip): +19.07%  BEATS buy-and-hold
+   costs x1.2 (0.60% round trip): +17.89%  BEATS buy-and-hold
+   costs x1.4 (0.70% round trip): +16.72%  loses to buy-and-hold
+   costs x1.6 (0.80% round trip): +15.56%  loses to buy-and-hold
+   costs x2.0 (1.00% round trip): +13.27%  loses to buy-and-hold
+
+=== 2. warm-up: the signal needs 252 sessions, so 2016-17 is not a fair sample ===
+   from start: strategy +19.07%  buy-and-hold +17.21%
+   from 2018-01-01: strategy +19.13%  buy-and-hold +13.66%
+   from 2019-01-01: strategy +24.88%  buy-and-hold +18.34%
+
+=== 3. a REAL investable benchmark: Nifty Midcap 50 total price index ===
+   Nifty Midcap 50: +18.43%  maxDD -49.1%
+   strategy       : +19.07%  maxDD -42.4%
+   from 2018-01-01: strategy +19.13%  midcap50 +15.01%
+   from 2019-01-01: strategy +24.88%  midcap50 +18.99%
+
+=== 4. how concentrated is the outperformance? excess by year, sorted ===
+   2023:+22.4  2026:+19.2  2020:+9.4  2019:+7.5  2025:+5.8  2018:+0.0  2024:-1.3  2022:-3.4  2016:-4.2  2021:-4.8  2017:-27.1
+   total excess +23.6pp; best 2 years +41.7pp (176% of it); excess excluding best 2: -18.0pp

@@ -1,0 +1,89 @@
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: AKZOINDIA.NS"}}}
+$AKZOINDIA.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['AKZOINDIA.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip AKZOINDIA.NS: only 0 bars
+$AMARAJABAT.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['AMARAJABAT.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip AMARAJABAT.NS: only 0 bars
+$DHANI.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['DHANI.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip DHANI.NS: only 0 bars
+$GMRINFRA.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['GMRINFRA.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip GMRINFRA.NS: only 0 bars
+  skip GSPL.NS: only 1 bars
+  skip GUJGASLTD.NS: only 26 bars
+$HBLPOWER.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['HBLPOWER.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip HBLPOWER.NS: only 0 bars
+$INFIBEAM.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['INFIBEAM.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip INFIBEAM.NS: only 0 bars
+$ISEC.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['ISEC.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip ISEC.NS: only 0 bars
+$KALPATPOWR.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['KALPATPOWR.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip KALPATPOWR.NS: only 0 bars
+$LAXMIMACH.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['LAXMIMACH.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip LAXMIMACH.NS: only 0 bars
+$LTIM.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['LTIM.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip LTIM.NS: only 0 bars
+$PEL.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['PEL.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip PEL.NS: only 0 bars
+$SEQUENT.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['SEQUENT.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip SEQUENT.NS: only 0 bars
+$SUNCLAYLTD.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['SUNCLAYLTD.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip SUNCLAYLTD.NS: only 0 bars
+$SUVENPHAR.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['SUVENPHAR.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip SUVENPHAR.NS: only 0 bars
+$SWANENERGY.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['SWANENERGY.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip SWANENERGY.NS: only 0 bars
+$TATAMOTORS.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['TATAMOTORS.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip TATAMOTORS.NS: only 0 bars
+$TV18BRDCST.NS: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['TV18BRDCST.NS']: possibly delisted; no price data found  (period=10y) (Yahoo error = "No data found, symbol may be delisted")
+  skip TV18BRDCST.NS: only 0 bars
+fetched 487

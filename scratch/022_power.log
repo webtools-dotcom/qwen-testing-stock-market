@@ -1,0 +1,25 @@
+universe 579 liquid mid/small
+paired days 2022, day_edge +0.5247%, pooled z +3.96
+
+observed fold z: [2.4  1.07 1.66 1.74 2.39]  (mean 1.85, sd 0.56)
+analytic expectation per fold if homogeneous: 1.77
+
+under a HOMOGENEOUS effect of this exact size (4000 shuffles):
+   folds clearing 2.0 == 0:   0.7%
+   folds clearing 2.0 == 1:  21.0%
+   folds clearing 2.0 == 2:  57.2%
+   folds clearing 2.0 == 3:  20.7%
+   folds clearing 2.0 == 4:   0.5%
+   folds clearing 2.0 == 5:   0.0%
+   P(<= 1 fold clears) = 21.6%   <- observed was 1
+   mean folds clearing = 1.99
+
+fold-z spread: observed 0.56 vs homogeneous 0.91 (p=85.7% of shuffles are at least as spread out)
+   -> a real regime break would show observed spread ABOVE the homogeneous distribution
+
+=== per-fold detail with confidence intervals ===
+Traceback (most recent call last):
+  File "D:\nabop\backtesting-unique-strategies\scratch\022_power.py", line 72, in <module>
+    print(f"  fold {i+1} {chunk.index[0].date()}..{chunk.index[-1].date()}  "
+                          ^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'index'

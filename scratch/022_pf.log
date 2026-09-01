@@ -1,0 +1,33 @@
+universe 579 names, 2474 dates
+
+=== portfolio: 20 concurrent positions, 8-session holds, costs charged ===
+  strategy 022               CAGR  +8.49%  maxDD  -45.5%  Sharpe  0.51  final 2.21x
+  random control seed 0      CAGR  -5.89%  maxDD  -70.3%  Sharpe -0.17  final 0.55x
+  random control seed 1      CAGR  -5.27%  maxDD  -71.9%  Sharpe -0.14  final 0.59x
+  random control seed 2      CAGR  +1.66%  maxDD  -63.6%  Sharpe  0.19  final 1.17x
+  random control seed 3      CAGR  -1.54%  maxDD  -67.4%  Sharpe  0.04  final 0.86x
+  random control seed 4      CAGR  -2.30%  maxDD  -65.8%  Sharpe  0.00  final 0.80x
+  equal-weight universe      CAGR +17.21%  maxDD  -54.3%  Sharpe  0.87  final 4.70x
+
+=== per calendar year: strategy vs equal-weight universe ===
+  2016: strategy   +0.00%   universe   +4.19%   random-pf   +0.00%   excess vs universe   -4.19%
+  2017: strategy  +18.06%   universe  +47.82%   random-pf   +7.11%   excess vs universe  -29.76%
+  2018: strategy  -20.83%   universe  -16.54%   random-pf  -26.01%   excess vs universe   -4.29%
+  2019: strategy   -6.52%   universe   -7.07%   random-pf  -19.81%   excess vs universe   +0.55%
+  2020: strategy  +18.86%   universe  +22.20%   random-pf   -3.42%   excess vs universe   -3.34%
+  2021: strategy  +38.81%   universe  +47.56%   random-pf  +30.91%   excess vs universe   -8.76%
+  2022: strategy  -11.60%   universe   -2.05%   random-pf  -17.13%   excess vs universe   -9.55%
+  2023: strategy  +48.62%   universe  +47.78%   random-pf  +22.89%   excess vs universe   +0.85%
+  2024: strategy  +13.84%   universe  +27.95%   random-pf   +6.56%   excess vs universe  -14.11%
+  2025: strategy   -1.83%   universe   +0.44%   random-pf  -11.86%   excess vs universe   -2.26%
+  2026: strategy   +2.47%   universe  +10.21%   random-pf   -1.89%   excess vs universe   -7.74%
+
+=== cost sensitivity (strategy CAGR) ===
+  costs x1.0                 CAGR  +8.49%  maxDD  -45.5%  Sharpe  0.51  final 2.21x
+  costs x1.5                 CAGR  +1.88%  maxDD  -51.4%  Sharpe  0.20  final 1.20x
+  costs x2.0                 CAGR  -4.33%  maxDD  -56.7%  Sharpe -0.12  final 0.65x
+
+=== position-count sensitivity ===
+  K=10                       CAGR +11.66%  maxDD  -55.1%  Sharpe  0.59  final 2.93x
+  K=20                       CAGR  +8.49%  maxDD  -45.5%  Sharpe  0.51  final 2.21x
+  K=30                       CAGR  +8.95%  maxDD  -34.3%  Sharpe  0.59  final 2.31x

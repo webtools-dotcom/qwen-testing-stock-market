@@ -1,0 +1,32 @@
+== threshold robustness: INCLUSIVE cuts (the real +/-1 step) ==
+top 5% inclusive                             n= 2901 days=1624 mean_z=+2.24 pass= 80% [+1.41,+3.04] day_edge=+0.434% net=+0.408% (ctrl +0.045%) win=49%
+top 10% inclusive                            n= 5428 days=1954 mean_z=+3.05 pass=100% [+2.09,+3.73] day_edge=+0.414% net=+0.425% (ctrl +0.045%) win=50%
+top 15% inclusive                            n= 7818 days=2073 mean_z=+3.71 pass=100% [+3.03,+4.33] day_edge=+0.427% net=+0.354% (ctrl +0.045%) win=50%
+top 20% inclusive                            n=10238 days=2134 mean_z=+2.37 pass= 90% [+1.51,+3.35] day_edge=+0.246% net=+0.317% (ctrl +0.045%) win=49%
+
+== survivorship probe ==
+   names present from 2016-17: 380; entered later: 107
+old names only                               n= 4063 days=1812 mean_z=+2.18 pass= 60% [+1.53,+2.83] day_edge=+0.241% net=+0.229% (ctrl +0.102%) win=49%
+later entrants only                          n= 1365 days= 828 mean_z=+3.07 pass=100% [+2.40,+3.61] day_edge=+0.746% net=+1.009% (ctrl +0.170%) win=51%
+
+== sanity: extreme score values (bad split/bonus adjustments would fake momentum) ==
+count    389780.000000
+mean         38.303906
+std          84.297449
+min         -92.625434
+50%          19.938334
+90%         115.115260
+99%         345.216680
+99.9%       893.836500
+max        3482.098521
+      date  ticker  change_252d      score
+2022-01-11 TTML.NS  3482.098521 898.060537
+2022-01-10 TTML.NS  3398.101301 876.483328
+2022-01-07 TTML.NS  3252.866438 839.035177
+2022-01-12 TTML.NS  3201.197381 800.187495
+2022-01-06 TTML.NS  3053.459157 787.740494
+2022-01-13 TTML.NS  2963.157755 719.936302
+2022-01-05 TTML.NS  2922.784812 754.136822
+2022-01-04 TTML.NS  2797.452226 721.910161
+2022-01-14 TTML.NS  2680.447055 651.334210
+2022-01-03 TTML.NS  2659.872567 686.520033

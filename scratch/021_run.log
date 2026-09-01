@@ -1,0 +1,45 @@
+universe: 484 names, 436 liquid mid/small with in-sample history
+
+== 1. search half (A), in-sample - this is the number NOT to trust ==
+half A, in-sample, h=8                         n= 1775 days= 720 mean_z=-0.44 pass=  0% [-1.05,+0.45] day_edge=-0.179% net=-0.109% (ctrl -0.236%) win=50%
+
+== 2. KILL #1: hold-out half of NAMES (B), in-sample ==
+half B (never searched), in-sample, h=8        n= 1616 days= 700 mean_z=-0.13 pass=  0% [-0.77,+0.61] day_edge=+0.016% net=-0.001% (ctrl -0.212%) win=51%
+
+== 3. KILL #2: held-out FORWARD window, both halves ==
+forward 2025-07-01+, h=6                       n= 1397 days= 280 mean_z=+1.08 pass=  0% [+0.41,+1.72] day_edge=+0.070% net=-0.357% (ctrl -0.316%) win=46%
+forward 2025-07-01+, h=8                       n= 1209 days= 277 mean_z=+1.32 pass=  0% [+0.73,+1.79] day_edge=+0.168% net=-0.312% (ctrl -0.326%) win=47%
+forward 2025-07-01+, h=10                      n= 1108 days= 271 mean_z=+1.23 pass=  0% [+0.79,+1.76] day_edge=+0.205% net=-0.272% (ctrl -0.340%) win=48%
+   forward, hold-out names only:
+forward, half B only, h=8                      n=  567 days= 243 mean_z=+0.63 pass=  0% [+0.17,+1.52] day_edge=+0.139% net=-0.190% (ctrl -0.335%) win=48%
+
+== 4. pooled full sample (all names, all dates) ==
+full sample h=6                                n= 5312 days=1100 mean_z=+0.12 pass=  0% [-0.49,+0.72] day_edge=-0.038% net=-0.163% (ctrl -0.294%) win=49%
+full sample h=8                                n= 4628 days=1090 mean_z=-0.01 pass=  0% [-0.79,+0.47] day_edge=-0.089% net=-0.104% (ctrl -0.254%) win=50%
+full sample h=10                               n= 4216 days=1079 mean_z=-0.13 pass=  0% [-0.87,+0.34] day_edge=-0.108% net=-0.039% (ctrl -0.252%) win=51%
+
+== 5. KILL #4: volatility/beta-matched control (full sample, h=8) ==
+MATCHED control                                n= 4628 days=1090 mean_z=+0.51 pass=  0% [+0.16,+0.95] day_edge=+0.051% net=-0.104% (ctrl -0.202%) win=50%
+
+== 6. KILL #5: decile gradient (full sample, h=8) ==
+D10                                            n= 4628 days=1090 mean_z=-0.04 pass=  0% [-0.79,+0.47] day_edge=-0.089% net=-0.104% (ctrl -0.254%) win=50%
+D9                                             n= 5655 days=1105 mean_z=+0.86 pass=  0% [+0.02,+1.47] day_edge=+0.002% net=-0.104% (ctrl -0.254%) win=50%
+D8                                             n= 6429 days=1109 mean_z=+0.42 pass=  0% [-0.62,+1.16] day_edge=-0.050% net=-0.170% (ctrl -0.254%) win=49%
+D6                                             n= 7475 days=1109 mean_z=-1.35 pass=  0% [-2.56,-0.53] day_edge=-0.177% net=-0.281% (ctrl -0.254%) win=48%
+D1                                             n= 4832 days=1091 mean_z=-3.21 pass=  0% [-4.02,-2.58] day_edge=-0.376% net=-0.450% (ctrl -0.254%) win=47%
+
+== 7. KILL #6: next-session entry (execution fragility, full sample) ==
+next-session entry, h=8                        n= 4650 days=1087 mean_z=+0.05 pass=  0% [-0.75,+0.54] day_edge=-0.086% net=-0.058% (ctrl -0.254%) win=50%
+
+== 8. KILL #7: walk-forward (full sample, h=8) ==
+fold 1 2022-08-22..2023-08-22                  n=  807 days= 229 mean_z=+0.11 pass=  0% [-0.25,+0.67] day_edge=-0.063% net=+0.216% (ctrl -0.058%) win=52%
+fold 2 2023-08-22..2024-08-28                  n= 1122 days= 238 mean_z=-0.61 pass=  0% [-1.21,+0.17] day_edge=-0.296% net=+0.512% (ctrl +0.599%) win=54%
+fold 3 2024-08-28..2025-08-26                  n= 1211 days= 239 mean_z=-0.40 pass=  0% [-0.96,-0.05] day_edge=-0.137% net=-0.888% (ctrl -0.849%) win=45%
+Traceback (most recent call last):
+  File "D:\nabop\backtesting-unique-strategies\strategies\021_intermediate_momentum_top_decile_swing_in_mid_small_caps.py", line 242, in <module>
+    lg2[t] = d
+    
+  File "D:\nabop\backtesting-unique-strategies\strategies\021_intermediate_momentum_top_decile_swing_in_mid_small_caps.py", line 220, in main
+    s, cf = run_set(slice_panel(panel, LO, FWD_END), next_open=True)
+                                   ^^^^^^^^^^^^^
+IndexError: list index out of range

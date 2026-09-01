@@ -1,0 +1,35 @@
+universe 585 names, 508 liquid mid/small
+
+== 1. head to head: filter off vs on (pooled) ==
+022 baseline (filter OFF)                    n= 6315 days=2014 mean_z=+3.07 pass=100% [+2.21,+3.61] day_edge=+0.475% net=+0.754% (ctrl +0.405%) win=50%
+023 filter ON h=6                            n= 7573 days=2082 mean_z=+2.30 pass= 75% [+1.17,+2.91] day_edge=+0.318% net=+0.481% (ctrl +0.167%) win=49%
+023 filter ON h=8                            n= 6122 days=2011 mean_z=+2.62 pass= 85% [+1.82,+3.30] day_edge=+0.459% net=+0.786% (ctrl +0.405%) win=50%
+023 filter ON h=10                           n= 5165 days=1900 mean_z=+1.54 pass= 10% [+0.79,+2.14] day_edge=+0.359% net=+1.129% (ctrl +0.654%) win=51%
+
+== 2. hold-out half of names ==
+half B                                       n= 2971 days=1572 mean_z=+1.88 pass= 35% [+0.52,+2.55] day_edge=+0.433% net=+0.701% (ctrl +0.428%) win=50%
+
+== 3. regime blocks ==
+P1 2016-2020                                 n= 1211 days= 650 mean_z=+2.47 pass= 85% [+1.77,+2.96] day_edge=+0.930% net=+0.400% (ctrl -0.149%) win=49%
+P2 2021-2023                                 n= 1933 days= 695 mean_z=+2.27 pass= 80% [+1.72,+2.84] day_edge=+0.729% net=+1.439% (ctrl +0.658%) win=52%
+P3 2024-2026                                 n= 2910 days= 636 mean_z=+1.52 pass=  5% [+1.06,+2.03] day_edge=+0.319% net=+0.553% (ctrl +0.120%) win=50%
+
+== 4. matched control / next-session / bracket ==
+vol-beta MATCHED control                     n= 6122 days=2012 mean_z=+3.07 pass=100% [+2.63,+3.66] day_edge=+0.521% net=+0.786% (ctrl +0.312%) win=50%
+next-session entry                           n= 6114 days=2009 mean_z=+2.50 pass= 90% [+1.60,+3.16] day_edge=+0.391% net=+0.824% (ctrl +0.405%) win=51%
+engine-default ATR bracket                   n= 7651 days=2054 mean_z=+0.77 pass=  0% [+0.49,+0.93] day_edge=+0.065% net=-0.104% (ctrl -0.214%) win=51%
+
+== 5. filter-threshold gradient (fitted spike or plateau?) ==
+dp_z floor None                              n= 6315 days=2014 mean_z=+3.05 pass=100% [+2.51,+3.61] day_edge=+0.475% net=+0.754% (ctrl +0.405%) win=50%
+dp_z floor -1.5                              n= 6240 days=2009 mean_z=+2.93 pass=100% [+2.35,+3.50] day_edge=+0.473% net=+0.802% (ctrl +0.405%) win=50%
+dp_z floor -1.0                              n= 6122 days=2011 mean_z=+2.59 pass= 80% [+1.92,+3.12] day_edge=+0.459% net=+0.786% (ctrl +0.405%) win=50%
+dp_z floor -0.5                              n= 5871 days=1972 mean_z=+2.61 pass=100% [+2.03,+3.08] day_edge=+0.489% net=+0.831% (ctrl +0.405%) win=50%
+dp_z floor 0.0                               n= 5426 days=1941 mean_z=+2.89 pass=100% [+2.35,+3.33] day_edge=+0.550% net=+0.776% (ctrl +0.405%) win=51%
+
+== 6. walk-forward ==
+fold 1 2018-07-02..2020-02-24                n=  565 days= 297 mean_z=+0.22 pass=  0% [-0.42,+0.54] day_edge=+0.160% net=-0.478% (ctrl -0.580%) win=47%
+fold 2 2020-02-24..2021-10-06                n=  745 days= 324 mean_z=+1.47 pass= 10% [+0.75,+2.33] day_edge=+0.610% net=+1.933% (ctrl +1.340%) win=51%
+fold 3 2021-10-06..2023-05-23                n=  986 days= 376 mean_z=+0.99 pass=  0% [+0.60,+1.47] day_edge=+0.343% net=-0.072% (ctrl -0.343%) win=47%
+fold 4 2023-05-23..2025-01-08                n= 1645 days= 377 mean_z=+1.46 pass=  0% [+1.01,+1.72] day_edge=+0.257% net=+1.340% (ctrl +1.034%) win=53%
+fold 5 2025-01-08..2026-08-19                n= 1722 days= 391 mean_z=+2.76 pass=100% [+2.45,+3.22] day_edge=+0.654% net=+0.469% (ctrl -0.067%) win=51%
+   folds clearing 2.0: 1/5

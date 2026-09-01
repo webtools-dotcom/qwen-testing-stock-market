@@ -1,0 +1,43 @@
+universe 487 names; half A 243, half B 244
+
+== 1. pooled, both halves, full 10y (KILL #2) ==
+pooled h=6                                   n= 6738 days=2044 mean_z=+2.90 pass=100% [+2.28,+3.43] day_edge=+0.331% net=+0.170% (ctrl -0.088%) win=49%
+pooled h=8                                   n= 5428 days=1954 mean_z=+3.09 pass=100% [+2.09,+3.73] day_edge=+0.414% net=+0.425% (ctrl +0.045%) win=50%
+pooled h=10                                  n= 4563 days=1868 mean_z=+2.98 pass=100% [+2.19,+3.42] day_edge=+0.487% net=+0.615% (ctrl +0.182%) win=50%
+
+== 2. KILL #1: hold-out half of NAMES (B, never searched) ==
+half B, h=8                                  n= 2701 days=1468 mean_z=+2.15 pass= 75% [+0.94,+2.68] day_edge=+0.376% net=+0.361% (ctrl +0.134%) win=49%
+half A (searched), h=8                       n= 2727 days=1477 mean_z=+2.95 pass= 95% [+1.88,+3.78] day_edge=+0.618% net=+0.489% (ctrl +0.045%) win=50%
+
+== 3. KILL #3/#4: regime blocks ==
+P1 2016-2020                                 n= 1136 days= 612 mean_z=+2.30 pass= 75% [+0.91,+3.36] day_edge=+0.495% net=+0.316% (ctrl -0.172%) win=50%
+P2 2021-2023                                 n= 1839 days= 674 mean_z=+1.76 pass= 20% [+1.17,+2.30] day_edge=+0.378% net=+0.894% (ctrl +0.337%) win=51%
+P3 2024-2026                                 n= 2424 days= 629 mean_z=+0.67 pass=  0% [+0.05,+1.12] day_edge=+0.166% net=+0.146% (ctrl -0.093%) win=48%
+   P1 on the hold-out half only (hardest cell):
+P1 x half B                                  n=  561 days= 390 mean_z=+1.80 pass= 30% [+0.31,+2.82] day_edge=+0.568% net=+0.346% (ctrl -0.119%) win=49%
+
+== 4. KILL #5: vol/beta-matched control (full 10y) ==
+MATCHED control h=8                          n= 5428 days=1955 mean_z=+3.56 pass=100% [+3.26,+3.98] day_edge=+0.413% net=+0.425% (ctrl +0.079%) win=50%
+
+== 5. KILL #6: next-session entry ==
+next-session entry h=8                       n= 5424 days=1954 mean_z=+2.75 pass= 95% [+1.99,+3.18] day_edge=+0.359% net=+0.439% (ctrl +0.045%) win=50%
+
+== 6. KILL #7: decile gradient ==
+D10                                          n= 5428 days=1954 mean_z=+3.05 pass=100% [+2.09,+3.73] day_edge=+0.414% net=+0.425% (ctrl +0.045%) win=50%
+D9                                           n= 6510 days=2042 mean_z=+0.79 pass=  0% [-0.33,+1.56] day_edge=+0.106% net=+0.131% (ctrl +0.045%) win=49%
+D8                                           n= 7151 days=2066 mean_z=+0.43 pass=  0% [-0.45,+1.02] day_edge=+0.070% net=+0.160% (ctrl +0.045%) win=49%
+D5                                           n= 7872 days=2113 mean_z=-1.36 pass=  0% [-2.36,-0.79] day_edge=-0.116% net=-0.085% (ctrl +0.045%) win=47%
+D1                                           n= 5145 days=1909 mean_z=-1.72 pass=  0% [-2.51,-0.83] day_edge=-0.203% net=-0.095% (ctrl +0.045%) win=46%
+
+== 7. engine-default ATR bracket (reported, not the spec) ==
+bracket exit h=8                             n= 6844 days=2024 mean_z=+0.68 pass=  0% [-0.02,+1.31] day_edge=+0.036% net=-0.162% (ctrl -0.226%) win=50%
+
+== 8. KILL #8: walk-forward, 5 folds ==
+fold 1 2018-04-23..2019-12-30                n=  555 days= 288 mean_z=+1.28 pass=  0% [+0.85,+1.89] day_edge=+0.550% net=-0.342% (ctrl -0.728%) win=48%
+fold 2 2019-12-30..2021-08-25                n=  701 days= 330 mean_z=+0.30 pass=  0% [-0.12,+0.86] day_edge=+0.097% net=+1.134% (ctrl +0.790%) win=51%
+fold 3 2021-08-25..2023-04-25                n=  999 days= 375 mean_z=+1.04 pass=  0% [+0.57,+1.41] day_edge=+0.406% net=-0.043% (ctrl -0.400%) win=47%
+fold 4 2023-04-25..2024-12-26                n= 1450 days= 385 mean_z=+0.51 pass=  0% [+0.23,+0.93] day_edge=+0.102% net=+1.086% (ctrl +0.847%) win=53%
+fold 5 2024-12-26..2026-08-20                n= 1465 days= 393 mean_z=+0.71 pass=  0% [+0.35,+1.07] day_edge=+0.146% net=+0.055% (ctrl -0.211%) win=49%
+
+== 9. KILL #9: large caps (ranked within Nifty 50) ==
+large caps h=8                               n= 1273 days= 902 mean_z=+0.36 pass=  0% [-0.01,+1.45] day_edge=+0.039% net=+0.069% (ctrl +0.185%) win=50%

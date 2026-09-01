@@ -1,0 +1,39 @@
+rows 607574 names 585 dates 2415 2016-11-21..2026-08-21
+mid/small rows 491034, names 535
+
+REF rsi<30 (ADOPTED baseline)      n= 18098 days=1858 edge=+0.303% t=+2.02 [5/6 sign, 3/6 at1.5] AP1-1.66 AP2+1.84 AP3+1.39 BP1+0.42 BP2+2.39 BP3+3.13
+REF ret10 < -8 (=strat 002)        n= 50927 days=2278 edge=-0.105% t=-1.16 [3/6 sign, 3/6 at1.5] AP1-2.34 AP2+1.18 AP3+0.46 BP1-2.44 BP2-2.12 BP3+1.69
+A dev_avwap < -6                   n= 60683 days=2293 edge=-0.209% t=-2.38 [3/6 sign, 3/6 at1.5] AP1-4.38 AP2+0.21 AP3+1.68 BP1-2.26 BP2-1.88 BP3+1.46
+B dev_avwap < -8                   n= 34087 days=2105 edge=+0.108% t=+0.80 [4/6 sign, 2/6 at1.5] AP1-2.25 AP2+2.18 AP3+1.41 BP1-2.10 BP2+0.65 BP3+1.99
+C dev_avwap < -12                  n= 10912 days=1515 edge=+0.668% t=+2.69 [4/6 sign, 3/6 at1.5] AP1-0.30 AP2+2.08 AP3+0.15 BP1-0.97 BP2+1.77 BP3+4.69
+D dev_avwap bottom decile          n= 47759 days=2407 edge=-0.203% t=-3.46 [5/6 sign, 3/6 at1.5] AP1-1.56 AP2-1.40 AP3-2.84 BP1-1.04 BP2-2.70 BP3+0.42
+E dev_avwap bottom 5%              n= 23242 days=2407 edge=-0.294% t=-3.34 [5/6 sign, 4/6 at1.5] AP1-1.90 AP2-0.19 AP3-1.57 BP1-2.38 BP2-3.55 BP3+2.43
+F bb_pos < 0                       n= 22567 days=1935 edge=-0.210% t=-2.04 [4/6 sign, 1/6 at1.5] AP1-0.77 AP2-1.75 AP3-0.48 BP1+0.19 BP2-1.40 BP3+1.01
+G drop_atr5 < -3                   n=  6838 days=1402 edge=-0.071% t=-0.39 [3/6 sign, 2/6 at1.5] AP1-1.82 AP2+0.92 AP3-2.71 BP1+1.60 BP2-0.28 BP3+1.55
+H B & vol_ratio3 < 1.0             n= 21554 days=1915 edge=-0.092% t=-0.61 [3/6 sign, 2/6 at1.5] AP1-3.04 AP2+0.36 AP3+0.86 BP1-1.15 BP2-1.86 BP3+1.05
+I B & vol_ratio3 > 1.5             n=  5245 days=1364 edge=+0.188% t=+0.90 [4/6 sign, 1/6 at1.5] AP1-1.47 AP2+2.48 AP3+1.13 BP1-1.70 BP2+1.45 BP3+0.43
+J B & close>sma_200                n= 11218 days=1567 edge=-0.173% t=-1.22 [4/6 sign, 2/6 at1.5] AP1-2.48 AP2-0.77 AP3+0.03 BP1-2.22 BP2+0.16 BP3-0.61
+K B & close<sma_200                n= 21609 days=1774 edge=+0.067% t=+0.38 [5/6 sign, 2/6 at1.5] AP1-1.85 AP2+1.53 AP3+1.37 BP1+0.01 BP2+0.17 BP3+2.21
+L B & rsi<30                       n= 12252 days=1555 edge=+0.400% t=+2.00 [4/6 sign, 3/6 at1.5] AP1-1.91 AP2+2.95 AP3+0.17 BP1-0.45 BP2+2.64 BP3+2.64
+M B & change_252d>0                n= 17794 days=1675 edge=+0.249% t=+1.89 [4/6 sign, 1/6 at1.5] AP1-1.80 AP2-0.03 AP3+1.82 BP1+0.04 BP2+0.20 BP3+1.39
+N B & rng_pos>0.6                  n=  6511 days=1127 edge=+0.004% t=+0.02 [3/6 sign, 0/6 at1.5] AP1+0.20 AP2-0.05 AP3-3.18 BP1-0.68 BP2+1.17 BP3+0.72
+O 20d low & rng_pos>0.6            n=     0 days=   0 edge=+nan% t= +nan [0/6 sign, 0/6 at1.5] AP1   -- AP2   -- AP3   -- BP1   -- BP2   -- BP3   --
+P B & atr_pct below median         n=  5405 days= 840 edge=-0.169% t=-1.40 [3/6 sign, 1/6 at1.5] AP1-4.60 AP2+1.51 AP3-0.89 BP1+0.59 BP2-0.85 BP3+1.03
+Q B & turnover_z<0                 n= 24793 days=1985 edge=-0.032% t=-0.22 [3/6 sign, 2/6 at1.5] AP1-2.39 AP2+1.41 AP3+0.44 BP1-1.99 BP2-0.80 BP3+1.09
+
+=== horizon band for the leaders ===
+  B dev_avwap < -8               h= 6: edge +0.079% t=+0.68 days=2107
+  B dev_avwap < -8               h= 8: edge +0.108% t=+0.80 days=2105
+  B dev_avwap < -8               h=10: edge +0.062% t=+0.43 days=2103
+  D dev_avwap bottom decile      h= 6: edge -0.100% t=-1.88 days=2409
+  D dev_avwap bottom decile      h= 8: edge -0.203% t=-3.46 days=2407
+  D dev_avwap bottom decile      h=10: edge -0.292% t=-4.50 days=2405
+  H B & vol_ratio3 < 1.0         h= 6: edge -0.179% t=-1.46 days=1917
+  H B & vol_ratio3 < 1.0         h= 8: edge -0.092% t=-0.61 days=1915
+  H B & vol_ratio3 < 1.0         h=10: edge -0.196% t=-1.19 days=1913
+  J B & close>sma_200            h= 6: edge -0.072% t=-0.60 days=1569
+  J B & close>sma_200            h= 8: edge -0.173% t=-1.22 days=1567
+  J B & close>sma_200            h=10: edge -0.244% t=-1.52 days=1565
+  Q B & turnover_z<0             h= 6: edge -0.097% t=-0.75 days=1987
+  Q B & turnover_z<0             h= 8: edge -0.032% t=-0.22 days=1985
+  Q B & turnover_z<0             h=10: edge -0.074% t=-0.45 days=1983

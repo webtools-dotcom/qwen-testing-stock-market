@@ -1,0 +1,14 @@
+  2017-05-19 | sessions 187, non-trading 13, cached 0, fails 0, 132s
+  2018-02-23 | sessions 379, non-trading 21, cached 0, fails 0, 275s
+  2018-11-30 | sessions 567, non-trading 33, cached 0, fails 0, 420s
+  2019-09-06 | sessions 710, non-trading 90, cached 0, fails 0, 545s
+  2020-06-15 | sessions 894, non-trading 106, cached 0, fails 1, 789s
+  2021-03-22 | sessions 1094, non-trading 106, cached 0, fails 1, 925s
+  2021-12-27 | sessions 1294, non-trading 106, cached 0, fails 1, 1067s
+  2022-10-04 | sessions 1493, non-trading 107, cached 0, fails 2, 1215s
+  2023-07-11 | sessions 1693, non-trading 107, cached 0, fails 2, 1412s
+  2024-04-16 | sessions 1893, non-trading 107, cached 0, fails 2, 1658s
+  2025-01-21 | sessions 2093, non-trading 107, cached 0, fails 2, 1927s
+  2025-10-28 | sessions 2283, non-trading 117, cached 0, fails 2, 2164s
+  2026-08-04 | sessions 2482, non-trading 118, cached 0, fails 2, 2438s
+done: 2495 sessions, 118 non-trading, 0 pre-cached, 2 failures, 2449s

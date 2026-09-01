@@ -1,0 +1,36 @@
+master universe: 629 names
+names never used in any search here: 142
+liquid mid/small with history: 579
+
+== breadth check (the whole point) ==
+master pooled h=8                            n= 6373 days=2022 mean_z=+3.90 pass=100% [+3.18,+4.43] day_edge=+0.525% net=+0.446% (ctrl +0.028%) win=49%
+   entries/day = 3.15   (487-name panel gave 2.78/day)
+
+== hold-out slices ==
+fresh names only (142)                       n= 1393 days= 755 mean_z=+1.42 pass= 30% [+0.35,+2.14] day_edge=+0.438% net=+0.307% (ctrl +0.057%) win=49%
+
+== regime blocks ==
+P1 2016-2020                                 n= 1261 days= 663 mean_z=+2.41 pass= 85% [+1.32,+3.11] day_edge=+0.669% net=+0.130% (ctrl -0.202%) win=49%
+P2 2021-2023                                 n= 2049 days= 696 mean_z=+1.91 pass= 45% [+1.33,+2.38] day_edge=+0.377% net=+0.797% (ctrl +0.355%) win=50%
+P3 2024-2026                                 n= 3031 days= 639 mean_z=+2.03 pass= 60% [+1.48,+2.66] day_edge=+0.425% net=+0.344% (ctrl -0.093%) win=49%
+
+== walk-forward, 5 folds (the criterion 022 failed) ==
+fold 1 2018-04-23..2019-12-30                n=  622 days= 310 mean_z=+0.77 pass=  0% [+0.33,+1.29] day_edge=+0.306% net=-0.630% (ctrl -0.929%) win=47%
+fold 2 2019-12-30..2021-08-25                n=  753 days= 336 mean_z=+0.82 pass=  0% [+0.26,+1.48] day_edge=+0.388% net=+1.123% (ctrl +0.779%) win=50%
+fold 3 2021-08-25..2023-04-25                n= 1098 days= 385 mean_z=+1.04 pass=  0% [+0.74,+1.40] day_edge=+0.409% net=-0.277% (ctrl -0.445%) win=45%
+fold 4 2023-04-25..2024-12-26                n= 1752 days= 388 mean_z=+1.28 pass=  0% [+0.93,+1.86] day_edge=+0.272% net=+1.233% (ctrl +0.930%) win=53%
+fold 5 2024-12-26..2026-08-20                n= 1845 days= 401 mean_z=+2.78 pass=100% [+2.39,+3.19] day_edge=+0.559% net=+0.249% (ctrl -0.228%) win=49%
+   folds clearing 2.0: 1/5
+
+== survivorship: names listed before 2017 only, incl. per fold ==
+   462 old names
+old names, pooled                            n= 4641 days=1938 mean_z=+3.04 pass=100% [+2.65,+3.77] day_edge=+0.417% net=+0.296% (ctrl +0.076%) win=49%
+  old fold 1                                 n=  571 days= 304 mean_z=+0.18 pass=  0% [-0.32,+0.59] day_edge=+0.060% net=-0.684% (ctrl -0.855%) win=47%
+  old fold 2                                 n=  575 days= 313 mean_z=+1.32 pass= 10% [+0.46,+2.04] day_edge=+0.558% net=+1.007% (ctrl +0.612%) win=49%
+  old fold 3                                 n=  777 days= 353 mean_z=-0.01 pass=  0% [-0.28,+0.41] day_edge=-0.105% net=-0.436% (ctrl -0.267%) win=46%
+  old fold 4                                 n= 1251 days= 375 mean_z=+1.02 pass=  0% [+0.41,+1.71] day_edge=+0.217% net=+0.979% (ctrl +0.822%) win=52%
+  old fold 5                                 n= 1174 days= 383 mean_z=+2.22 pass= 80% [+1.80,+2.51] day_edge=+0.446% net=+0.125% (ctrl -0.131%) win=48%
+
+== search deflation (METHODOLOGY 6/9) ==
+   observed SR 0.291; trial SRs [0.305, 0.291, 0.261, 0.245, 0.207, 0.155, 0.148]
+   deflated: {'observed_sr': 0.29091075635216124, 'noise_ceiling_sr': 0.08680959882853173, 'n_trials': 7, 'dsr': 1.0}

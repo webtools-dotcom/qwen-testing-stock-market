@@ -1,0 +1,91 @@
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: LTIM.NS"}}}
+$LTIM.NS: possibly delisted; no price data found  (period=5y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['LTIM.NS']: possibly delisted; no price data found  (period=5y) (Yahoo error = "No data found, symbol may be delisted")
+$SHRIRAMFIN.NS: possibly delisted; no price data found  (period=5y)
+
+1 Failed download:
+['SHRIRAMFIN.NS']: possibly delisted; no price data found  (period=5y)
+$SJVN.NS: possibly delisted; no price data found  (period=5y)
+
+1 Failed download:
+['SJVN.NS']: possibly delisted; no price data found  (period=5y)
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+$TATAMOTORS.NS: possibly delisted; no price data found  (period=5y) (Yahoo error = "No data found, symbol may be delisted")
+
+1 Failed download:
+['TATAMOTORS.NS']: possibly delisted; no price data found  (period=5y) (Yahoo error = "No data found, symbol may be delisted")
+  skip LTIM.NS: only 0 bars
+  skip SHRIRAMFIN.NS: only 0 bars
+  skip SJVN.NS: only 0 bars
+  skip TATAMOTORS.NS: only 0 bars
+panel: 170/174 stocks
+followers scored: 119,389 stock-days | signal rows: 6,782 over 1134 days
+
+--- Sector leader lead-lag catch-up (POOLED, 8d, costs) ---
+  trades              : 2978
+  gross avg/trade     : +0.370%
+  avg round-trip cost : 0.500%
+  NET avg/trade       : -0.130%
+  control (random)    : -0.184%
+  edge vs control     : +0.053%
+  naive z             : 0.53   (p=0.5982)  <- OPTIMISTIC, do not headline
+  win rate            : 50.1%
+  Sharpe (annualised) : -0.15
+  DAY-CLUSTERED z_pair: 1.77   <- THE HEADLINE (1017 paired days, day_edge +0.186%)
+
+  POOLED vs random: n=2978  STABLE mean_z +1.71 (min +0.65, max +2.56)  pass 15%
+
+=== SUBGROUP (sec 8): the tradeable half must clear on its own ===
+  Mid/Small   net -0.112%  edge +0.074%  win 50.2%
+    Mid/Small: n=2679  STABLE mean_z +1.66 (min +0.71, max +2.47)  pass 25%
+  Large(N50)  net -0.294%  edge -0.092%  win 49.5%
+    Large(N50): n= 299  STABLE mean_z +0.67 (min -0.66, max +2.44)  pass 5%
+
+=== KILL TEST: REVERSAL-MATCHED control (same own-r5 quintile, no sector condition) ===
+  matched n=6734  control -0.259%  strategy -0.130%  edge +0.129%
+  vs reversal-matched: n=2978  STABLE mean_z +1.53 (min +0.86, max +2.81)  pass 25%
+
+=== KILL TEST: SECTOR-DAY-MATCHED control (same sector, same day, not the laggard) ===
+  matched n=5814  control -0.177%  strategy -0.130%  edge +0.046%
+  vs sector-day-matched: n=2978  STABLE mean_z +0.25 (min -0.47, max +0.76)  pass 0%
+
+=== GAP DECILE GRADIENT (within hot sectors) ===
+  D 1 [0.0-0.1) n= 1222  net -0.416%  edge -0.233%  z_paired +0.03
+  D 2 [0.1-0.2) n= 1583  net -0.181%  edge +0.003%  z_paired +0.73
+  D 3 [0.2-0.3) n= 1870  net -0.109%  edge +0.075%  z_paired +2.04
+  D 4 [0.3-0.4) n= 2039  net -0.083%  edge +0.101%  z_paired +2.09
+  D 5 [0.4-0.5) n= 2305  net -0.241%  edge -0.058%  z_paired +0.92
+  D 6 [0.5-0.6) n= 2679  net +0.013%  edge +0.197%  z_paired +3.60
+  D 7 [0.6-0.7) n= 2826  net -0.139%  edge +0.044%  z_paired -0.49
+  D 8 [0.7-0.8) n= 3172  net -0.199%  edge -0.015%  z_paired +0.60
+  D 9 [0.8-0.9) n= 3310  net -0.004%  edge +0.179%  z_paired +2.32
+  D10 [0.9-1.0) n= 2978  net -0.130%  edge +0.053%  z_paired +1.77
+
+=== WALK-FORWARD (pooled, by date window) ===
+  Fold 1 2022-08-22..2023-08-21 n= 583 213 paired days | net +0.15% edge +0.18% | z_paired +1.18 day_edge +0.25%
+  Fold 2 2023-08-22..2024-08-27 n= 695 222 paired days | net +0.43% edge -0.10% | z_paired +0.15 day_edge +0.03%
+  Fold 3 2024-08-28..2025-08-25 n= 641 213 paired days | net -0.79% edge -0.10% | z_paired +0.78 day_edge +0.18%
+  Fold 4 2025-08-26..2026-08-21 n= 598 198 paired days | net +0.01% edge +0.32% | z_paired +1.66 day_edge +0.37%
+
+=== SENSITIVITY (+-1 step: plateau or spike?) ===
+  gap>=0.85 sector>=0.50: n=4524 mean_z +1.33
+  gap>=0.85 sector>=0.67: n=3949 mean_z +2.13
+  gap>=0.85 sector>=0.80: n=3280 mean_z +2.37
+  gap>=0.90 sector>=0.50: n=3379 mean_z +1.71
+  gap>=0.90 sector>=0.67: n=2978 mean_z +1.68
+  gap>=0.90 sector>=0.80: n=2513 mean_z +2.10
+  gap>=0.95 sector>=0.50: n=2006 mean_z +2.07
+  gap>=0.95 sector>=0.67: n=1794 mean_z +2.31
+  gap>=0.95 sector>=0.80: n=1527 mean_z +2.96
+
+=== NEXT-OPEN FILL ===
+  next-open: n=2966  STABLE mean_z +1.57 (min +0.85, max +2.32)  pass 25%
+
+=== HOLDING-PERIOD BAND (6-10d) ===
+  hold  6d: n=3077  STABLE mean_z +1.96 (min +1.66, max +2.25)  pass 50%
+  hold  7d: n=3022  STABLE mean_z +1.80 (min +1.39, max +2.20)  pass 30%
+  hold  8d: n=2978  STABLE mean_z +1.68 (min +1.31, max +2.04)  pass 10%
+  hold  9d: n=2936  STABLE mean_z +1.41 (min +1.12, max +1.94)  pass 0%
+  hold 10d: n=2901  STABLE mean_z +1.82 (min +1.50, max +2.45)  pass 10%

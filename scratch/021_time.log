@@ -1,0 +1,42 @@
+universe 484 names; half A 242, half B 242
+
+== A. bracket vs time exit, search half A in-sample (sanity on the spec change) ==
+half A, BRACKET exit                           n= 1775 days= 720 mean_z=-0.50 pass=  0% [-1.05,+0.45] day_edge=-0.179% net=-0.109% (ctrl -0.236%) win=50%
+half A, TIME exit                              n= 1413 days= 683 mean_z=+1.62 pass= 20% [+1.19,+2.07] day_edge=+0.325% net=+0.457% (ctrl +0.121%) win=48%
+
+== B. KILL #1: hold-out half of NAMES (B), in-sample, time exit ==
+half B (never searched), h=8                   n= 1279 days= 664 mean_z=+0.60 pass=  0% [-0.05,+1.15] day_edge=+0.261% net=+0.382% (ctrl +0.177%) win=49%
+
+== C. KILL #2: held-out forward window, time exit ==
+forward all names h=6                          n= 1236 days= 277 mean_z=+1.30 pass=  0% [+0.78,+1.97] day_edge=+0.162% net=-0.159% (ctrl -0.219%) win=46%
+forward all names h=8                          n=  981 days= 272 mean_z=+0.76 pass=  0% [+0.39,+1.26] day_edge=+0.146% net=+0.054% (ctrl -0.109%) win=47%
+forward all names h=10                         n=  831 days= 259 mean_z=+1.96 pass= 30% [+1.41,+2.59] day_edge=+0.463% net=+0.031% (ctrl -0.036%) win=46%
+forward, half B only, h=8                      n=  459 days= 224 mean_z=+0.60 pass=  0% [-0.15,+1.16] day_edge=+0.248% net=+0.163% (ctrl -0.248%) win=49%
+
+== D. full sample, time exit ==
+full sample h=6                                n= 4613 days=1091 mean_z=+2.15 pass= 70% [+1.86,+2.54] day_edge=+0.236% net=+0.128% (ctrl -0.110%) win=48%
+full sample h=8                                n= 3698 days=1080 mean_z=+2.36 pass=100% [+2.07,+2.70] day_edge=+0.347% net=+0.342% (ctrl +0.064%) win=48%
+full sample h=10                               n= 3132 days=1039 mean_z=+1.89 pass= 30% [+1.36,+2.26] day_edge=+0.255% net=+0.607% (ctrl +0.250%) win=49%
+
+== E. KILL #4: vol/beta-matched control (full sample) ==
+MATCHED control h=8                            n= 3698 days=1078 mean_z=+2.42 pass=100% [+2.13,+2.94] day_edge=+0.389% net=+0.342% (ctrl +0.092%) win=48%
+
+== F. KILL #5: decile gradient (full sample, time exit) ==
+D10                                            n= 3698 days=1080 mean_z=+2.36 pass=100% [+2.07,+2.70] day_edge=+0.347% net=+0.342% (ctrl +0.064%) win=48%
+D9                                             n= 4722 days=1102 mean_z=+1.30 pass=  0% [+0.78,+1.80] day_edge=+0.097% net=+0.195% (ctrl +0.064%) win=49%
+D8                                             n= 5500 days=1103 mean_z=-0.86 pass=  0% [-1.57,-0.17] day_edge=-0.153% net=+0.026% (ctrl +0.064%) win=48%
+D5                                             n= 6473 days=1106 mean_z=-2.75 pass=  0% [-3.55,-2.08] day_edge=-0.318% net=-0.058% (ctrl +0.064%) win=47%
+D1                                             n= 3992 days=1084 mean_z=-1.66 pass=  0% [-2.22,-1.12] day_edge=-0.270% net=-0.068% (ctrl +0.064%) win=47%
+
+== G. KILL #6: next-session entry ==
+next-session entry h=8                         n= 3694 days=1079 mean_z=+2.36 pass=100% [+2.05,+2.80] day_edge=+0.356% net=+0.364% (ctrl +0.064%) win=49%
+
+== H. KILL #7: walk-forward ==
+fold 1 2022-08-22..2023-08-22                  n=  647 days= 219 mean_z=+1.30 pass=  0% [+0.99,+1.76] day_edge=+0.386% net=+0.660% (ctrl +0.309%) win=52%
+fold 2 2023-08-22..2024-08-28                  n=  873 days= 227 mean_z=+0.58 pass=  0% [+0.23,+0.89] day_edge=+0.137% net=+1.569% (ctrl +1.313%) win=52%
+fold 3 2024-08-28..2025-08-26                  n=  990 days= 238 mean_z=-1.16 pass=  0% [-1.67,-0.74] day_edge=-0.359% net=-1.178% (ctrl -0.668%) win=42%
+Traceback (most recent call last):
+  File "D:\nabop\backtesting-unique-strategies\scratch\021_time_exit.py", line 70, in <module>
+    f_lo, f_hi = dates[te[0]], dates[te[-1]]
+                               ~~~~~^^^^^^^^
+IndexError: list index out of range

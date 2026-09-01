@@ -1,0 +1,68 @@
+universe 629 names, 579 liquid mid/small, hold=21
+
+== KILL 1: pooled and hold-out half of names ==
+pooled h=21                                  n= 3029 days=1552 mean_z=+3.57 pass=100% [+2.91,+3.98] day_edge=+0.984% net=+1.997% (ctrl +0.964%) win=53%
+hold-out half B                              n= 1619 days=1067 mean_z=+2.63 pass= 95% [+1.88,+3.56] day_edge=+1.018% net=+2.195% (ctrl +1.183%) win=54%
+
+== KILL 9: +/-1 step in holding period ==
+hold=15                                      n= 3918 days=1738 mean_z=+3.02 pass=100% [+2.63,+3.47] day_edge=+0.662% net=+1.262% (ctrl +0.580%) win=52%
+hold=21                                      n= 3029 days=1552 mean_z=+3.48 pass=100% [+2.91,+3.98] day_edge=+0.984% net=+1.997% (ctrl +0.964%) win=53%
+hold=30                                      n= 2327 days=1344 mean_z=+2.55 pass= 90% [+1.96,+3.22] day_edge=+1.143% net=+2.722% (ctrl +1.579%) win=53%
+
+== KILL 2: regime blocks ==
+P1 2016-2020                                 n=  588 days= 407 mean_z=+2.24 pass= 80% [+1.05,+2.95] day_edge=+0.876% net=+1.114% (ctrl +0.380%) win=52%
+P2 2021-2023                                 n=  975 days= 526 mean_z=+1.60 pass= 20% [+0.89,+2.22] day_edge=+0.686% net=+3.036% (ctrl +1.771%) win=57%
+P3 2024-2026                                 n= 1443 days= 560 mean_z=+1.64 pass=  0% [+1.30,+1.99] day_edge=+0.632% net=+1.605% (ctrl +0.792%) win=50%
+
+== KILL 3: survivorship - names listed before 2017 must clear ALONE ==
+   462 pre-2017 names, 167 later listings
+pre-2017 names only                          n= 2221 days=1341 mean_z=+2.90 pass=100% [+2.24,+3.50] day_edge=+0.998% net=+1.613% (ctrl +0.929%) win=53%
+later listings only                          n=  808 days= 532 mean_z=+3.13 pass= 90% [+1.70,+4.15] day_edge=+2.141% net=+3.054% (ctrl +1.184%) win=53%
+   pre-2017 subgroup retains 101% of pooled day_edge (kill #3 needs >= 60% and z >= 2.0)
+
+== KILL 5/6: matched control, next-session entry ==
+vol/beta-MATCHED control                     n= 3029 days=1547 mean_z=+3.90 pass=100% [+3.42,+4.48] day_edge=+0.995% net=+1.997% (ctrl +0.945%) win=53%
+next-session entry                           n= 3028 days=1551 mean_z=+3.16 pass=100% [+2.57,+4.15] day_edge=+0.929% net=+1.829% (ctrl +0.964%) win=53%
+
+== KILL 7: fold stability on the realised paired series ==
+   paired days 1552, pooled z +3.39
+   fold z [2.45 0.26 2.29 0.68 2.28]  mean 1.59 (homogeneous expectation 1.52), spread 1.04
+   spread under homogeneity 0.93; 37% of shuffles as spread out or more
+
+   per calendar year (traded paired series):
+     2017: edge +8.926%  z +2.51  days 30
+     2018: edge +0.041%  z +0.04  days 126
+     2019: edge +1.766%  z +1.62  days 124
+     2020: edge +0.574%  z +0.46  days 145
+     2021: edge +0.460%  z +0.46  days 181
+     2022: edge +0.852%  z +1.25  days 178
+     2023: edge +1.290%  z +1.76  days 194
+     2024: edge +0.619%  z +0.98  days 231
+     2025: edge +0.679%  z +1.09  days 225
+     2026: edge +1.445%  z +1.72  days 118
+
+== KILL 8: deflated Sharpe against the 10-horizon search ==
+   observed SR 0.494; 10 horizon trials [0.159, 0.291, 0.376, 0.431, 0.494, 0.452, 0.455, 0.444, 0.445, 0.402]
+   {'observed_sr': 0.4944247458157113, 'noise_ceiling_sr': 0.15745041414894653, 'n_trials': 10, 'dsr': 1.0}
+
+== KILL 4: THE TOOL TEST - portfolio vs buy-and-hold ==
+  buy-and-hold universe      CAGR +17.21%  maxDD  -54.3%  Sharpe  0.87  final 4.70x
+  strategy hold=21           CAGR +19.07%  maxDD  -42.4%  Sharpe  0.94  final 5.48x
+  random hold=21 seed 0      CAGR  +3.54%  maxDD  -55.8%  Sharpe  0.27  final 1.40x
+  random hold=21 seed 1      CAGR  +6.87%  maxDD  -65.9%  Sharpe  0.43  final 1.91x
+  random hold=21 seed 2      CAGR  +5.62%  maxDD  -62.1%  Sharpe  0.37  final 1.70x
+  strategy costs x1.5        CAGR +16.14%  maxDD  -45.2%  Sharpe  0.82  final 4.30x
+  strategy costs x2.0        CAGR +13.27%  maxDD  -47.9%  Sharpe  0.70  final 3.37x
+
+   per calendar year, strategy vs buy-and-hold:
+     2016: strategy   +0.00%  buy-hold   +4.19%  random   +0.00%  excess   -4.19%
+     2017: strategy  +20.68%  buy-hold  +47.82%  random   +7.03%  excess  -27.14%
+     2018: strategy  -16.51%  buy-hold  -16.54%  random  -19.59%  excess   +0.03%
+     2019: strategy   +0.48%  buy-hold   -7.07%  random  -14.06%  excess   +7.54%
+     2020: strategy  +31.57%  buy-hold  +22.20%  random  +13.92%  excess   +9.37%
+     2021: strategy  +42.78%  buy-hold  +47.56%  random  +30.44%  excess   -4.79%
+     2022: strategy   -5.44%  buy-hold   -2.05%  random   -4.45%  excess   -3.39%
+     2023: strategy  +70.23%  buy-hold  +47.78%  random  +42.86%  excess  +22.45%
+     2024: strategy  +26.63%  buy-hold  +27.95%  random   +7.30%  excess   -1.32%
+     2025: strategy   +6.28%  buy-hold   +0.44%  random   -5.63%  excess   +5.85%
+     2026: strategy  +29.42%  buy-hold  +10.21%  random   +4.77%  excess  +19.21%

@@ -1,0 +1,159 @@
+rows 522427 names 443 dates 2415 2016-11-21..2026-08-21
+half  period
+A     P1         64488
+      P2         85175
+      P3        105671
+B     P1         77252
+      P2         86924
+      P3        102917
+dtype: int64
+60 features
+
+feature                dec  | AP1    AP2    AP3    BP1    BP2    BP3    | pooled
+amihud_z               D10  | AP1+0.35 AP2-3.71 AP3-2.50 BP1+0.55 BP2-7.15 BP3-0.06  | ALL -0.179%/t-3.32
+amihud_z               D1   | AP1-3.19 AP2+3.97 AP3+2.78 BP1-2.33 BP2+1.19 BP3+5.22  | ALL +0.056%/t+1.23
+atr_pct                D10  | AP1-3.03 AP2+1.01 AP3+1.63 BP1-0.66 BP2+0.10 BP3-1.89  | ALL -0.103%/t-1.46
+atr_pct                D1   | AP1-1.98 AP2-5.57 AP3-2.52 BP1+1.63 BP2-6.01 BP3-2.25  | ALL -0.185%/t-5.04  <== 5+/6 cells
+atr_pct_rank           D10  | AP1-1.08 AP2-0.39 AP3+0.60 BP1+0.84 BP2+0.46 BP3-1.34  | ALL -0.044%/t-0.92
+atr_pct_rank           D1   | AP1-0.53 AP2-1.06 AP3-5.76 BP1+0.49 BP2-1.59 BP3+2.67  | ALL -0.069%/t-1.63
+bb_bw                  D10  | AP1-2.27 AP2+0.69 AP3+3.79 BP1+1.51 BP2+1.43 BP3+0.68  | ALL +0.016%/t+0.28
+bb_bw                  D1   | AP1+1.69 AP2-0.76 AP3-5.24 BP1+0.45 BP2-4.99 BP3+5.06  | ALL -0.040%/t-1.21
+bb_bw_rank             D10  | AP1-3.75 AP2-0.72 AP3+4.86 BP1+2.04 BP2+1.65 BP3+0.71  | ALL +0.049%/t+1.17
+bb_bw_rank             D1   | AP1-1.34 AP2+2.64 AP3-3.41 BP1-1.70 BP2-2.58 BP3+4.34  | ALL -0.029%/t-0.85
+bb_pos                 D10  | AP1-3.62 AP2+1.52 AP3-2.67 BP1-1.07 BP2-0.41 BP3+0.03  | ALL -0.099%/t-2.35
+bb_pos                 D1   | AP1+0.34 AP2-2.67 AP3-1.54 BP1-1.16 BP2-3.51 BP3+1.83  | ALL -0.106%/t-2.50
+beta                   D10  | AP1+1.55 AP2+2.84 AP3+0.13 BP1-1.22 BP2+2.27 BP3+0.39  | ALL +0.097%/t+1.41
+beta                   D1   | AP1-1.02 AP2-0.19 AP3+0.42 BP1-3.60 BP2-9.19 BP3+0.02  | ALL -0.170%/t-3.93
+change_252d            D10  | AP1+2.56 AP2+6.92 AP3+0.43 BP1+5.42 BP2+4.65 BP3+4.03  | ALL +0.492%/t+8.78  <== 5+/6 cells
+change_252d            D1   | AP1-1.54 AP2-2.09 AP3-3.01 BP1-0.50 BP2-1.71 BP3-0.22  | ALL -0.152%/t-2.39  <== 4/6
+close_sma20            D10  | AP1-2.26 AP2+2.40 AP3-0.04 BP1+2.17 BP2+0.17 BP3-1.20  | ALL +0.027%/t+0.59
+close_sma20            D1   | AP1-0.40 AP2-1.63 AP3-0.13 BP1-1.91 BP2-2.94 BP3+0.71  | ALL -0.154%/t-3.05
+close_sma200           D10  | AP1+0.02 AP2+6.00 AP3+0.56 BP1+5.25 BP2+1.53 BP3+1.16  | ALL +0.339%/t+6.18
+close_sma200           D1   | AP1-3.57 AP2-2.19 AP3-0.45 BP1+0.19 BP2-3.60 BP3+1.56  | ALL -0.157%/t-2.40
+close_sma50            D10  | AP1-2.53 AP2+3.75 AP3+2.33 BP1+1.31 BP2+2.06 BP3+2.37  | ALL +0.136%/t+2.80  <== 4/6
+close_sma50            D1   | AP1-1.21 AP2-0.83 AP3-0.31 BP1-1.30 BP2-3.32 BP3+4.45  | ALL -0.082%/t-1.44
+co_ret                 D10  | AP1-2.82 AP2+1.25 AP3-1.86 BP1-2.25 BP2-0.38 BP3-1.77  | ALL -0.130%/t-2.87  <== 4/6
+co_ret                 D1   | AP1-2.23 AP2+1.17 AP3-1.29 BP1-1.14 BP2-0.12 BP3+1.02  | ALL -0.078%/t-1.73
+corr_mkt               D10  | AP1-2.44 AP2+1.17 AP3-1.83 BP1-1.46 BP2+1.68 BP3+1.79  | ALL -0.060%/t-1.25
+corr_mkt               D1   | AP1-0.06 AP2-0.09 AP3-2.33 BP1-3.20 BP2-5.20 BP3-3.79  | ALL -0.149%/t-3.53  <== 4/6
+dev_avwap              D10  | AP1-1.56 AP2+1.86 AP3+0.13 BP1+2.20 BP2+0.71 BP3+0.10  | ALL +0.047%/t+1.04
+dev_avwap              D1   | AP1-0.33 AP2-0.49 AP3-1.89 BP1-2.00 BP2-3.22 BP3-0.24  | ALL -0.164%/t-3.11
+dist_high10            D10  | AP1-2.84 AP2-1.34 AP3-1.20 BP1-1.70 BP2-3.12 BP3+0.53  | ALL -0.166%/t-4.55
+dist_high10            D1   | AP1-2.21 AP2-2.14 AP3+0.70 BP1-2.76 BP2-0.74 BP3+0.38  | ALL -0.190%/t-3.52
+dist_high20            D10  | AP1-1.74 AP2-0.31 AP3-1.61 BP1-1.56 BP2-0.42 BP3-0.08  | ALL -0.094%/t-2.56
+dist_high20            D1   | AP1-2.11 AP2-1.91 AP3-0.05 BP1-2.86 BP2-2.75 BP3+0.19  | ALL -0.240%/t-4.32  <== 4/6
+dist_high250           D10  | AP1-0.00 AP2+2.75 AP3+2.24 BP1+1.06 BP2-1.29 BP3+3.25  | ALL +0.118%/t+2.76
+dist_high250           D1   | AP1-2.69 AP2-1.80 AP3-0.71 BP1-0.88 BP2-0.14 BP3+1.11  | ALL -0.156%/t-2.31
+distance_from_high_50  D10  | AP1-2.60 AP2+1.22 AP3+1.25 BP1+1.97 BP2+0.96 BP3+1.18  | ALL +0.038%/t+0.94
+distance_from_high_50  D1   | AP1-3.66 AP2-1.66 AP3-0.90 BP1+0.48 BP2-1.97 BP3+3.07  | ALL -0.111%/t-1.78
+dn_streak              D10  | AP1-0.93 AP2+0.99 AP3-1.07 BP1-0.32 BP2-1.47 BP3+4.45  | ALL +0.001%/t+0.03
+dn_streak              D1   | AP1-0.37 AP2+2.36 AP3+0.49 BP1-1.92 BP2+3.11 BP3-2.01  | ALL +0.007%/t+0.18
+drop_atr5              D10  | AP1-1.75 AP2+0.11 AP3-1.43 BP1-0.68 BP2-0.69 BP3-2.41  | ALL -0.112%/t-2.62
+drop_atr5              D1   | AP1-0.24 AP2-1.20 AP3-0.42 BP1-0.58 BP2-2.10 BP3+0.80  | ALL -0.098%/t-2.38
+gap                    D10  | AP1-2.37 AP2+1.14 AP3-1.77 BP1-1.50 BP2+0.29 BP3-0.32  | ALL -0.078%/t-1.74
+gap                    D1   | AP1-3.43 AP2-3.32 AP3-2.20 BP1+0.54 BP2-2.33 BP3-0.66  | ALL -0.154%/t-3.76  <== 4/6
+idio_vol               D10  | AP1-3.85 AP2+4.77 AP3+2.21 BP1+1.04 BP2-1.85 BP3-1.41  | ALL -0.003%/t-0.04
+idio_vol               D1   | AP1+1.10 AP2-1.88 AP3-3.21 BP1+0.15 BP2-2.93 BP3-2.21  | ALL -0.089%/t-2.91  <== 4/6
+intraday20             D10  | AP1-3.30 AP2+1.69 AP3+0.82 BP1+1.33 BP2+0.91 BP3+1.11  | ALL -0.020%/t-0.46
+intraday20             D1   | AP1-1.28 AP2-2.10 AP3-1.16 BP1-1.85 BP2-3.59 BP3-0.07  | ALL -0.146%/t-2.98
+kurt60                 D10  | AP1-5.12 AP2+1.37 AP3-2.74 BP1+1.38 BP2-4.31 BP3-3.93  | ALL -0.144%/t-3.70  <== 4/6
+kurt60                 D1   | AP1+1.94 AP2+1.46 AP3-0.86 BP1+2.38 BP2-0.36 BP3-1.26  | ALL +0.099%/t+2.69
+maxret20               D10  | AP1+0.12 AP2+1.06 AP3+3.61 BP1-2.03 BP2+2.38 BP3-0.28  | ALL +0.047%/t+0.86
+maxret20               D1   | AP1-1.50 AP2-3.17 AP3-3.58 BP1-3.08 BP2-8.63 BP3+0.49  | ALL -0.211%/t-6.92  <== 4/6
+mkt1                   D10  | AP1-4.03 AP2-0.40 AP3-5.12 BP1-5.47 BP2+0.98 BP3+1.19  | ALL -0.224%/t-5.85
+mkt1                   D1   | AP1-1.98 AP2+1.43 AP3+1.60 BP1-1.64 BP2+2.42 BP3-1.23  | ALL -0.011%/t-0.25
+mkt20                  D10  | AP1-4.51 AP2+7.44 AP3+1.14 BP1-3.06 BP2+1.38 BP3-0.42  | ALL -0.094%/t-2.12
+mkt20                  D1   | AP1-1.39 AP2-0.24 AP3+0.65 BP1-1.30 BP2+2.97 BP3+0.51  | ALL -0.015%/t-0.40
+mkt5                   D10  | AP1-4.03 AP2-0.24 AP3-4.03 BP1-5.47 BP2+0.55 BP3+1.19  | ALL -0.216%/t-5.66
+mkt5                   D1   | AP1-1.64 AP2+0.84 AP3+0.45 BP1-1.88 BP2+3.37 BP3-0.77  | ALL -0.017%/t-0.42
+momentum_60d           D10  | AP1-0.98 AP2+6.52 AP3+3.53 BP1+3.30 BP2+3.94 BP3-0.04  | ALL +0.309%/t+6.12  <== 4/6
+momentum_60d           D1   | AP1-1.57 AP2-2.41 AP3+1.00 BP1-0.45 BP2-3.94 BP3+3.56  | ALL -0.080%/t-1.29
+obv_ch20               D10  | AP1-2.56 AP2+0.73 AP3+0.37 BP1+1.63 BP2-1.31 BP3+1.11  | ALL -0.019%/t-0.44
+obv_ch20               D1   | AP1+1.29 AP2-2.47 AP3+1.56 BP1-2.05 BP2-1.69 BP3+1.99  | ALL -0.054%/t-1.49
+oc_gap20               D10  | AP1-0.06 AP2+0.21 AP3+1.29 BP1-0.83 BP2+4.94 BP3+1.73  | ALL +0.052%/t+1.11
+oc_gap20               D1   | AP1-0.60 AP2-2.94 AP3-0.77 BP1+1.72 BP2-1.93 BP3-0.15  | ALL -0.036%/t-0.86
+resid20                D10  | AP1-4.78 AP2+2.34 AP3+3.17 BP1+0.44 BP2+0.43 BP3+1.34  | ALL -0.009%/t-0.18
+resid20                D1   | AP1-1.01 AP2-0.49 AP3-0.20 BP1-1.10 BP2-1.81 BP3+0.60  | ALL -0.098%/t-1.87
+resid5                 D10  | AP1-4.55 AP2+1.39 AP3-0.99 BP1-0.02 BP2-0.97 BP3-3.04  | ALL -0.133%/t-2.86
+resid5                 D1   | AP1-1.68 AP2-1.04 AP3-1.24 BP1+0.14 BP2-0.17 BP3+0.49  | ALL -0.072%/t-1.45
+ret1                   D10  | AP1-2.42 AP2+2.24 AP3-1.19 BP1-1.22 BP2+0.37 BP3-1.98  | ALL -0.073%/t-1.57
+ret1                   D1   | AP1-2.99 AP2-1.04 AP3-0.70 BP1+0.06 BP2-1.43 BP3+1.75  | ALL -0.103%/t-2.21
+ret10                  D10  | AP1-3.21 AP2+1.95 AP3+0.18 BP1+0.79 BP2+0.67 BP3-1.79  | ALL -0.025%/t-0.54
+ret10                  D1   | AP1-0.47 AP2-1.82 AP3+1.31 BP1-1.22 BP2-3.20 BP3+1.69  | ALL -0.105%/t-2.15
+ret120                 D10  | AP1+0.92 AP2+6.92 AP3+0.58 BP1+6.27 BP2+2.73 BP3+2.66  | ALL +0.392%/t+7.45  <== 4/6
+ret120                 D1   | AP1-4.12 AP2-3.88 AP3-0.51 BP1-1.04 BP2-3.76 BP3+0.29  | ALL -0.257%/t-4.23
+ret2                   D10  | AP1-3.03 AP2+1.66 AP3-1.36 BP1-0.69 BP2-0.22 BP3-2.79  | ALL -0.103%/t-2.21
+ret2                   D1   | AP1-1.11 AP2-0.93 AP3-0.72 BP1-0.28 BP2-0.72 BP3+1.81  | ALL -0.053%/t-1.11
+ret20                  D10  | AP1-3.64 AP2+2.33 AP3+1.98 BP1+0.79 BP2+1.36 BP3+2.22  | ALL +0.026%/t+0.54
+ret20                  D1   | AP1-0.74 AP2-0.93 AP3-1.05 BP1-1.53 BP2-3.75 BP3+1.98  | ALL -0.140%/t-2.71
+ret3                   D10  | AP1-3.45 AP2+0.33 AP3-0.99 BP1-0.58 BP2+0.37 BP3-1.81  | ALL -0.108%/t-2.28
+ret3                   D1   | AP1-1.33 AP2-0.81 AP3+0.03 BP1+0.43 BP2+0.37 BP3+2.96  | ALL +0.004%/t+0.07
+ret5                   D10  | AP1-2.00 AP2+1.16 AP3-1.09 BP1+0.02 BP2-0.95 BP3-3.56  | ALL -0.103%/t-2.25
+ret5                   D1   | AP1-0.66 AP2-0.96 AP3+0.05 BP1-1.47 BP2-0.60 BP3+1.42  | ALL -0.093%/t-1.89
+ret60                  D10  | AP1-0.98 AP2+6.52 AP3+3.53 BP1+3.30 BP2+3.94 BP3-0.04  | ALL +0.309%/t+6.12  <== 4/6
+ret60                  D1   | AP1-1.57 AP2-2.41 AP3+1.00 BP1-0.45 BP2-3.94 BP3+3.56  | ALL -0.080%/t-1.29
+ret_ex1_5              D10  | AP1-2.64 AP2+0.77 AP3-1.14 BP1-0.50 BP2+0.22 BP3-3.07  | ALL -0.103%/t-2.28
+ret_ex1_5              D1   | AP1-1.91 AP2-1.11 AP3-0.48 BP1-1.99 BP2-0.67 BP3+1.84  | ALL -0.102%/t-2.18
+ret_ex20_120           D10  | AP1-1.89 AP2+7.17 AP3-0.55 BP1+5.72 BP2+2.96 BP3+1.66  | ALL +0.326%/t+6.11  <== 4/6
+ret_ex20_120           D1   | AP1-3.05 AP2-2.52 AP3-1.94 BP1-2.01 BP2-2.95 BP3-2.91  | ALL -0.310%/t-5.67  <== 5+/6 cells
+ret_ex5_20             D10  | AP1-2.60 AP2+1.93 AP3+3.08 BP1+0.73 BP2+3.38 BP3+2.56  | ALL +0.084%/t+1.83  <== 4/6
+ret_ex5_20             D1   | AP1-1.92 AP2-1.08 AP3-2.55 BP1-2.92 BP2-2.42 BP3-1.47  | ALL -0.261%/t-5.39  <== 4/6
+rng_pos                D10  | AP1-0.78 AP2-0.47 AP3-2.27 BP1-3.91 BP2-1.54 BP3-0.32  | ALL -0.154%/t-4.22
+rng_pos                D1   | AP1-3.42 AP2-0.22 AP3-0.81 BP1-2.10 BP2-0.09 BP3+0.40  | ALL -0.138%/t-3.65
+rng_pos5               D10  | AP1-2.53 AP2-2.37 AP3-1.96 BP1+0.37 BP2-2.36 BP3-2.28  | ALL -0.152%/t-4.04  <== 5+/6 cells
+rng_pos5               D1   | AP1-1.59 AP2+2.26 AP3+0.32 BP1-3.01 BP2-0.28 BP3+0.01  | ALL -0.045%/t-1.12
+rsi                    D10  | AP1-1.58 AP2+2.01 AP3+1.38 BP1+2.36 BP2+1.77 BP3+0.63  | ALL +0.072%/t+1.73
+rsi                    D1   | AP1-0.17 AP2-1.62 AP3+1.14 BP1-0.63 BP2-4.23 BP3+1.22  | ALL -0.067%/t-1.41
+sharpe60               D10  | AP1+1.14 AP2+4.39 AP3+3.02 BP1+4.56 BP2+3.73 BP3+2.54  | ALL +0.335%/t+7.23  <== 5+/6 cells
+sharpe60               D1   | AP1-0.01 AP2-1.70 AP3+0.72 BP1-1.94 BP2-4.10 BP3+2.00  | ALL -0.062%/t-1.19
+skew60                 D10  | AP1-5.96 AP2+0.72 AP3-0.13 BP1+2.44 BP2+0.07 BP3-3.72  | ALL -0.064%/t-1.75
+skew60                 D1   | AP1-5.00 AP2-2.75 AP3-1.61 BP1-3.88 BP2-3.31 BP3-0.65  | ALL -0.230%/t-6.37  <== 5+/6 cells
+sma20_slope            D10  | AP1-2.19 AP2+2.23 AP3+2.12 BP1+0.18 BP2+2.55 BP3+3.03  | ALL +0.064%/t+1.32  <== 4/6
+sma20_slope            D1   | AP1-0.68 AP2-1.86 AP3-1.37 BP1-0.94 BP2-4.52 BP3+2.09  | ALL -0.145%/t-2.81
+sma50_slope            D10  | AP1-2.01 AP2+5.99 AP3+3.48 BP1+4.16 BP2+3.03 BP3+2.05  | ALL +0.291%/t+5.86  <== 5+/6 cells
+sma50_slope            D1   | AP1-1.59 AP2-2.08 AP3-0.73 BP1-2.46 BP2-2.71 BP3+2.09  | ALL -0.142%/t-2.24  <== 4/6
+turn_ratio20           D10  | AP1-2.56 AP2+0.27 AP3+1.77 BP1-0.57 BP2+1.36 BP3+0.41  | ALL -0.034%/t-0.83
+turn_ratio20           D1   | AP1-2.45 AP2+1.27 AP3-7.38 BP1+0.57 BP2-3.19 BP3+1.28  | ALL -0.132%/t-3.17
+turnover_z             D10  | AP1-1.13 AP2+1.10 AP3-1.92 BP1-0.96 BP2+0.58 BP3-0.73  | ALL -0.083%/t-2.06
+turnover_z             D1   | AP1-0.59 AP2-4.08 AP3-3.47 BP1-1.86 BP2-4.19 BP3+0.72  | ALL -0.174%/t-4.65  <== 4/6
+up_days20              D10  | AP1-2.18 AP2-0.56 AP3-4.87 BP1+3.82 BP2+0.70 BP3+2.85  | ALL +0.008%/t+0.21
+up_days20              D1   | AP1-0.76 AP2-1.23 AP3+0.09 BP1-3.52 BP2-1.67 BP3+0.85  | ALL -0.138%/t-3.46
+vol20                  D10  | AP1-3.02 AP2-0.49 AP3+3.33 BP1-0.30 BP2-0.26 BP3-1.68  | ALL -0.120%/t-1.92
+vol20                  D1   | AP1+1.71 AP2-3.33 AP3-2.73 BP1-2.07 BP2-8.39 BP3+1.75  | ALL -0.150%/t-4.41  <== 4/6
+vol60                  D10  | AP1-4.06 AP2+3.85 AP3+2.22 BP1+1.36 BP2-2.46 BP3-1.69  | ALL -0.040%/t-0.61
+vol60                  D1   | AP1+1.55 AP2-4.37 AP3-1.88 BP1-1.72 BP2-8.59 BP3+0.04  | ALL -0.164%/t-4.44  <== 4/6
+vol_ratio1             D10  | AP1-0.22 AP2+0.55 AP3-1.13 BP1-2.02 BP2-0.28 BP3-0.65  | ALL -0.096%/t-2.29
+vol_ratio1             D1   | AP1-2.49 AP2-0.24 AP3-3.69 BP1+0.31 BP2-5.56 BP3-1.36  | ALL -0.161%/t-4.18
+vol_ratio3             D10  | AP1-1.22 AP2-1.72 AP3-0.05 BP1-1.65 BP2+0.28 BP3-1.36  | ALL -0.104%/t-2.47
+vol_ratio3             D1   | AP1-2.62 AP2+1.81 AP3-3.65 BP1+0.67 BP2-5.21 BP3-1.83  | ALL -0.148%/t-3.74  <== 4/6
+vol_ratio_2060         D10  | AP1-0.90 AP2-5.03 AP3+2.57 BP1-1.45 BP2-1.01 BP3-1.11  | ALL -0.165%/t-4.06
+vol_ratio_2060         D1   | AP1-5.29 AP2+2.98 AP3-1.74 BP1-1.04 BP2-4.48 BP3+1.68  | ALL -0.136%/t-3.54
+volume_change          D10  | AP1-1.93 AP2+0.66 AP3+0.05 BP1-0.90 BP2-0.14 BP3-1.44  | ALL -0.090%/t-2.17
+volume_change          D1   | AP1-0.09 AP2+0.14 AP3-2.53 BP1+0.65 BP2-1.35 BP3-0.67  | ALL -0.026%/t-0.71
+
+=== ranked by cells agreeing (|t|>=1.5, pooled sign) ===
+  6/6 cells (same-sign 6/6)  ret_ex20_120         D1    AP1-3.05 AP2-2.52 AP3-1.94 BP1-2.01 BP2-2.95 BP3-2.91  | ALL -0.310%/t-5.67
+  5/6 cells (same-sign 6/6)  change_252d          D10   AP1+2.56 AP2+6.92 AP3+0.43 BP1+5.42 BP2+4.65 BP3+4.03  | ALL +0.492%/t+8.78
+  5/6 cells (same-sign 6/6)  sharpe60             D10   AP1+1.14 AP2+4.39 AP3+3.02 BP1+4.56 BP2+3.73 BP3+2.54  | ALL +0.335%/t+7.23
+  5/6 cells (same-sign 6/6)  skew60               D1    AP1-5.00 AP2-2.75 AP3-1.61 BP1-3.88 BP2-3.31 BP3-0.65  | ALL -0.230%/t-6.37
+  5/6 cells (same-sign 5/6)  sma50_slope          D10   AP1-2.01 AP2+5.99 AP3+3.48 BP1+4.16 BP2+3.03 BP3+2.05  | ALL +0.291%/t+5.86
+  5/6 cells (same-sign 5/6)  atr_pct              D1    AP1-1.98 AP2-5.57 AP3-2.52 BP1+1.63 BP2-6.01 BP3-2.25  | ALL -0.185%/t-5.04
+  5/6 cells (same-sign 5/6)  rng_pos5             D10   AP1-2.53 AP2-2.37 AP3-1.96 BP1+0.37 BP2-2.36 BP3-2.28  | ALL -0.152%/t-4.04
+  4/6 cells (same-sign 6/6)  ret120               D10   AP1+0.92 AP2+6.92 AP3+0.58 BP1+6.27 BP2+2.73 BP3+2.66  | ALL +0.392%/t+7.45
+  4/6 cells (same-sign 6/6)  ret_ex5_20           D1    AP1-1.92 AP2-1.08 AP3-2.55 BP1-2.92 BP2-2.42 BP3-1.47  | ALL -0.261%/t-5.39
+  4/6 cells (same-sign 6/6)  corr_mkt             D1    AP1-0.06 AP2-0.09 AP3-2.33 BP1-3.20 BP2-5.20 BP3-3.79  | ALL -0.149%/t-3.53
+  4/6 cells (same-sign 6/6)  change_252d          D1    AP1-1.54 AP2-2.09 AP3-3.01 BP1-0.50 BP2-1.71 BP3-0.22  | ALL -0.152%/t-2.39
+  4/6 cells (same-sign 5/6)  maxret20             D1    AP1-1.50 AP2-3.17 AP3-3.58 BP1-3.08 BP2-8.63 BP3+0.49  | ALL -0.211%/t-6.92
+  4/6 cells (same-sign 5/6)  turnover_z           D1    AP1-0.59 AP2-4.08 AP3-3.47 BP1-1.86 BP2-4.19 BP3+0.72  | ALL -0.174%/t-4.65
+  4/6 cells (same-sign 5/6)  dist_high20          D1    AP1-2.11 AP2-1.91 AP3-0.05 BP1-2.86 BP2-2.75 BP3+0.19  | ALL -0.240%/t-4.32
+  4/6 cells (same-sign 5/6)  gap                  D1    AP1-3.43 AP2-3.32 AP3-2.20 BP1+0.54 BP2-2.33 BP3-0.66  | ALL -0.154%/t-3.76
+  4/6 cells (same-sign 5/6)  co_ret               D10   AP1-2.82 AP2+1.25 AP3-1.86 BP1-2.25 BP2-0.38 BP3-1.77  | ALL -0.130%/t-2.87
+  4/6 cells (same-sign 5/6)  close_sma50          D10   AP1-2.53 AP2+3.75 AP3+2.33 BP1+1.31 BP2+2.06 BP3+2.37  | ALL +0.136%/t+2.80
+  4/6 cells (same-sign 5/6)  sma50_slope          D1    AP1-1.59 AP2-2.08 AP3-0.73 BP1-2.46 BP2-2.71 BP3+2.09  | ALL -0.142%/t-2.24
+  4/6 cells (same-sign 5/6)  ret_ex5_20           D10   AP1-2.60 AP2+1.93 AP3+3.08 BP1+0.73 BP2+3.38 BP3+2.56  | ALL +0.084%/t+1.83
+  4/6 cells (same-sign 5/6)  sma20_slope          D10   AP1-2.19 AP2+2.23 AP3+2.12 BP1+0.18 BP2+2.55 BP3+3.03  | ALL +0.064%/t+1.32
+  4/6 cells (same-sign 4/6)  ret60                D10   AP1-0.98 AP2+6.52 AP3+3.53 BP1+3.30 BP2+3.94 BP3-0.04  | ALL +0.309%/t+6.12
+  4/6 cells (same-sign 4/6)  momentum_60d         D10   AP1-0.98 AP2+6.52 AP3+3.53 BP1+3.30 BP2+3.94 BP3-0.04  | ALL +0.309%/t+6.12
+  4/6 cells (same-sign 4/6)  ret_ex20_120         D10   AP1-1.89 AP2+7.17 AP3-0.55 BP1+5.72 BP2+2.96 BP3+1.66  | ALL +0.326%/t+6.11
+  4/6 cells (same-sign 4/6)  vol60                D1    AP1+1.55 AP2-4.37 AP3-1.88 BP1-1.72 BP2-8.59 BP3+0.04  | ALL -0.164%/t-4.44
+  4/6 cells (same-sign 4/6)  vol20                D1    AP1+1.71 AP2-3.33 AP3-2.73 BP1-2.07 BP2-8.39 BP3+1.75  | ALL -0.150%/t-4.41
